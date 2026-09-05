@@ -1,33 +1,34 @@
-"use client";
-
-import { useState } from "react";
+import { LayoutGrid, Rows3 } from "lucide-react";
+import type { Dispatch, SetStateAction } from "react";
 import { TechMarquee } from "./TechMarquee";
 import { TechStaticGrid } from "./TechStaticGrid";
 
-export function TechStackToggle() {
-  const [mode, setMode] = useState<"animated" | "static">("animated");
+export type TechStackMode = "animated" | "static";
 
+// Small icon button meant to sit in a SectionHeader's actions slot, next
+// to "View All". State is owned by the parent section so this button
+// and the content below always agree on the current mode.
+export function TechStackModeControl({
+  mode,
+  onChange,
+}: {
+  mode: TechStackMode;
+  onChange: Dispatch<SetStateAction<TechStackMode>>;
+}) {
+  const nextMode = mode === "animated" ? "static" : "animated";
   return (
-    <div className="flex flex-col gap-6">
-      <div className="flex items-center gap-1 self-start rounded-full border border-gray-200 p-1">
-        {(["animated", "static"] as const).map((option) => (
-          <button
-            key={option}
-            type="button"
-            onClick={() => setMode(option)}
-            aria-pressed={mode === option}
-            className={`font-technical text-[11px] uppercase tracking-wide px-3 py-1.5 rounded-full transition-colors ${
-              mode === option
-                ? "bg-ink text-background"
-                : "text-gray-500 hover:text-ink"
-            }`}
-          >
-            {option === "animated" ? "Animated" : "Grouped"}
-          </button>
-        ))}
-      </div>
-
-      {mode === "animated" ? <TechMarquee /> : <TechStaticGrid />}
-    </div>
+    <button
+      type="button"
+      onClick={() => onChange(nextMode)}
+      aria-label={mode === "animated" ? "Switch to grouped view" : "Switch to animated view"}
+      title={mode === "animated" ? "Switch to grouped view" : "Switch to animated view"}
+      className="flex items-center justify-center w-7 h-7 rounded-[6px] border border-gray-200 text-gray-400 hover:text-ink hover:border-gray-300 transition-colors"
+    >
+      {mode === "animated" ? <LayoutGrid size={13} /> : <Rows3 size={13} />}
+    </button>
   );
+}
+
+export function TechStackContent({ mode }: { mode: TechStackMode }) {
+  return mode === "animated" ? <TechMarquee /> : <TechStaticGrid />;
 }
