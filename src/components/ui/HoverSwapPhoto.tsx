@@ -33,14 +33,18 @@ export function HoverSwapPhoto({
         alt={alt}
         fill
         sizes={`${size}px`}
-        className={`object-cover transition-opacity duration-500 ${active ? "opacity-0" : "opacity-100"}`}
+        className={`object-cover transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          active ? "opacity-0 scale-95 -rotate-2" : "opacity-100 scale-100 rotate-0"
+        }`}
       />
       <Image
         src={secondarySrc}
         alt=""
         fill
         sizes={`${size}px`}
-        className={`object-cover absolute inset-0 transition-opacity duration-500 ${active ? "opacity-100" : "opacity-0"}`}
+        className={`object-cover absolute inset-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          active ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-105 rotate-2"
+        }`}
       />
     </button>
   );
