@@ -132,3 +132,41 @@ body {
 .animate-marquee-right:hover {
   animation-play-state: paused;
 }
+
+/* ---- year selector transition ---- */
+@keyframes year-in-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes year-in-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-year-in-from-right {
+  animation: year-in-from-right 240ms var(--ease-out-soft, ease-out);
+}
+
+.animate-year-in-from-left {
+  animation: year-in-from-left 240ms var(--ease-out-soft, ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-year-in-from-right,
+  .animate-year-in-from-left {
+    animation: none;
+  }
+}
