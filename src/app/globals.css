@@ -170,3 +170,26 @@ body {
     animation: none;
   }
 }
+
+/* ---- theme toggle icon swap ---- */
+@keyframes theme-icon-in {
+  from {
+    opacity: 0;
+    transform: scale(0.6) rotate(-30deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.animate-theme-icon-in {
+  display: inline-flex;
+  animation: theme-icon-in 260ms var(--ease-out-soft, ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-theme-icon-in {
+    animation: none;
+  }
+}

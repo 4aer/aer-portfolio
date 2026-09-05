@@ -3,7 +3,7 @@ import { education, featuredCertifications } from "@/data/education";
 
 export function EducationSection() {
   return (
-    <section className="py-12">
+    <section id="education" className="py-12">
       <SectionHeader label="education" />
       <div className="grid sm:grid-cols-[8rem_1fr] gap-2 sm:gap-6 pb-8">
         <span className="font-technical text-[11px] uppercase text-gray-400 whitespace-nowrap">
