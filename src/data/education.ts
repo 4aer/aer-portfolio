@@ -11,8 +11,8 @@ export const education: Education = {
   degree: "Bachelor of Science in Information Technology",
   school: "National Teachers College, Manila",
   location: "Manila, Philippines",
-  start: "Sept 2022",
-  end: "Aug 2026",
+  start: "2022",
+  end: "2026",
   coursework: ["Software Engineering", "Databases", "Web Development", "Networking", "InfoSec"],
 };
 
