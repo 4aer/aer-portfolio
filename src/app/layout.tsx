@@ -19,7 +19,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Mark Nathan B. Olmedo — Full-Stack Developer",
+  title: "Mark Olmedo",
   description:
     "Full-stack developer with an IT infrastructure background. Building practical software across Next.js, Python/FastAPI, and React.",
 };
