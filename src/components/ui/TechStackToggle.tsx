@@ -22,7 +22,7 @@ export function TechStackModeControl({
       onClick={() => onChange(nextMode)}
       aria-label={mode === "animated" ? "Switch to grouped view" : "Switch to animated view"}
       title={mode === "animated" ? "Switch to grouped view" : "Switch to animated view"}
-      className="flex items-center justify-center w-7 h-7 rounded-[6px] border border-gray-200 text-gray-400 hover:text-ink hover:border-gray-300 transition-colors"
+      className="flex items-center justify-center w-7 h-7 rounded-[6px] text-gray-400 hover:text-ink transition-colors"
     >
       {mode === "animated" ? <LayoutGrid size={13} /> : <Rows3 size={13} />}
     </button>
