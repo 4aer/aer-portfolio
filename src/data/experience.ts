@@ -11,6 +11,19 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    slug: "accenture",
+    title: "Application Developer",
+    org: "Accenture",
+    location: "Philippines",
+    start: "Aug 2026",
+    end: "Present",
+    summary: "Attending Accenture’s Application Development Bootcamp to build software development skills.",
+    bullets: [
+      
+    ],
+  },
+
+  {
     slug: "bank-of-makati",
     title: "Computer Support Operations Intern",
     org: "Bank of Makati",
