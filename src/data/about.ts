@@ -6,5 +6,5 @@ export type About = {
 // practical-sounding About text.
 export const about: About = {
   blurb:
-    "Placeholder — a short, practical About section goes here. Who you are, what you build, and what you're looking for, in a few plain sentences.",
+    "PLACEHOLDER: lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 };

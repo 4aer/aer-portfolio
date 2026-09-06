@@ -12,7 +12,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-gray-200 bg-background/90 backdrop-blur-sm">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link href="/" className="font-display text-base lowercase">
-          4aer
+          aer
         </Link>
 
         <div className="flex items-center gap-6">
