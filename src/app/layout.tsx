@@ -21,7 +21,7 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   title: "Mark Olmedo",
   description:
-    "Full-stack developer with an IT infrastructure background. Building practical software across Next.js, Python/FastAPI, and React.",
+    "A passionate BS Information Technology graduate building practical applications across the stack, with a focus on efficiency and maintanable solutions.",
 };
 
 export default function RootLayout({
