@@ -193,3 +193,30 @@ body {
     animation: none;
   }
 }
+
+.hover-swap-photo {
+  transition-property: opacity, transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hover-swap-photo--visible {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.hover-swap-photo--hidden {
+  opacity: 0;
+  transform: scale(0.95) rotate(-2deg);
+}
+
+.hover-swap-photo--hidden-alt {
+  opacity: 0;
+  transform: scale(1.05) rotate(2deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hover-swap-photo {
+    transition: none;
+  }
+}
