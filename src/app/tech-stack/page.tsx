@@ -1,7 +1,7 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { TechStaticGrid } from "@/components/ui/TechStaticGrid";
 
-export const metadata = { title: "Tech Stack — Mark Nathan B. Olmedo" };
+export const metadata = { title: "Tech Stack" };
 
 export default function TechStackPage() {
   return (

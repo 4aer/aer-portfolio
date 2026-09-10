@@ -2,7 +2,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { projects } from "@/data/projects";
 
-export const metadata = { title: "Projects — Mark Nathan B. Olmedo" };
+export const metadata = { title: "Projects" };
 
 export default function ProjectsPage() {
   return (

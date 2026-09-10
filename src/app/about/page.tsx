@@ -1,6 +1,6 @@
 import { AboutSection } from "@/components/sections/AboutSection";
 
-export const metadata = { title: "About — Mark Nathan B. Olmedo" };
+export const metadata = { title: "About" };
 
 export default function AboutPage() {
   return (

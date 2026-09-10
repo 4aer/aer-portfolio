@@ -1,7 +1,7 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { experience } from "@/data/experience";
 
-export const metadata = { title: "Experience — Mark Nathan B. Olmedo" };
+export const metadata = { title: "Experience" };
 
 export default function ExperiencePage() {
   return (

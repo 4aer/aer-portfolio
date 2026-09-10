@@ -1,7 +1,7 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { certifications } from "@/data/education";
 
-export const metadata = { title: "Certifications — Mark Nathan B. Olmedo" };
+export const metadata = { title: "Certifications" };
 
 export default function CertificationsPage() {
   return (
