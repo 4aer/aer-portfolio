@@ -30,7 +30,8 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-gray-200 bg-background/90 backdrop-blur-sm">
+    <>
+      <header className="sticky top-0 z-40 border-b border-gray-200 bg-background/90 backdrop-blur-sm">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link href="/" className="font-display text-base lowercase">
           aer
@@ -71,28 +72,29 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile full-screen overlay menu */}
-      <div
-        className={`sm:hidden fixed inset-0 top-14 z-30 nav-overlay ${
-          open ? "nav-overlay--open" : "nav-overlay--closed"
-        }`}
-        aria-hidden={!open}
-      >
-        <nav className="flex flex-col px-4 pt-2">
-          {navLinks.map((link, i) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              style={{ transitionDelay: open ? `${70 + i * 60}ms` : "0ms" }}
-              className={`nav-overlay-item font-display text-2xl lowercase py-4 border-b border-gray-200 ${
-                open ? "nav-overlay-item--in" : "nav-overlay-item--out"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+      </header>
+
+    <div
+      className={`sm:hidden fixed inset-0 top-14 z-50 nav-overlay ${
+        open ? "nav-overlay--open" : "nav-overlay--closed"
+      }`}
+      aria-hidden={!open}
+    >
+      <nav className="flex flex-col px-4 pt-2">
+        {navLinks.map((link, i) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            style={{ transitionDelay: open ? `${70 + i * 60}ms` : "0ms" }}
+            className={`nav-overlay-item font-display text-2xl lowercase py-4 border-b border-gray-200 ${
+              open ? "nav-overlay-item--in" : "nav-overlay-item--out"
+            }`}
+          >
+            {link.label}
+          </Link>
+        ))}
+      </nav>
       </div>
-    </header>
+    </>
   );
 }

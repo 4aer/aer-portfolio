@@ -223,8 +223,8 @@ body {
 
 /* ---- mobile nav overlay ---- */
 .nav-overlay {
-  background: color-mix(in srgb, var(--background) 96%, transparent);
-  backdrop-filter: blur(8px);
+  background: var(--background);
+  isolation: isolate;
   transition: opacity 300ms var(--ease-out-soft, ease-out), visibility 300ms;
 }
 
