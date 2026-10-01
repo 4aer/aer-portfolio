@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T09:32:44.661Z",
+  "generatedAt": "2026-10-01T09:59:29.432Z",
   "username": "4aer",
   "years": {
     "2024": {
@@ -1578,7 +1578,7 @@
       ]
     },
     "2025": {
-      "totalContributions": 422,
+      "totalContributions": 413,
       "weeks": [
         [
           {
@@ -2629,7 +2629,7 @@
           },
           {
             "date": "2025-09-02",
-            "count": 10
+            "count": 5
           },
           {
             "date": "2025-09-03",
@@ -2813,7 +2813,7 @@
           },
           {
             "date": "2025-10-15",
-            "count": 8
+            "count": 4
           },
           {
             "date": "2025-10-16",
